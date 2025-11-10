@@ -1,0 +1,10 @@
+<!-- views/partials/_navbar.ejs -->
+<nav>
+    <% if(user) { %>
+    <a class="umjetnik" href="/users/<%= user._id %>/music">Your Artist</a>
+    <a class="odjava" href="/auth/sign-out">Sign Out</a>
+    <% } else { %>
+    <a class="ulogujse" href="/auth/sign-in">Sign In</a>
+    <a class="nalog" href="/auth/sign-up">Sign Up</a>
+    <% } %>
+  </nav>
